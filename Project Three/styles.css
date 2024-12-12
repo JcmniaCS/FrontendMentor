@@ -1,0 +1,110 @@
+/* Attribution section styling */
+.attribution { 
+    color: white; /* Text color for the attribution section */
+    font-size: 14px; /* Font size for the attribution text */
+    text-align: center; /* Center aligns the text */
+}
+
+.attribution a { 
+    color: hsl(75, 94%, 57%); /* Link color for the attribution section */
+}
+
+/* Styling for social links (GitHub, Frontend, LinkedIn, etc.) */
+.GitHub, .Frontend, .Linked, .Twitter, .Instagram {
+    border-radius: 15px; /* Rounded corners for buttons */
+    background-color: hsl(0, 0%, 20%); /* Dark background for buttons */
+}
+
+/* Avatar image styling */
+.avatar {
+    border-radius: 50%; /* Makes the image circular */
+    display: inline-block; /* Keeps the element inline-block */
+    width: 100px; /* Fixed width for the avatar */
+    height: 100px; /* Fixed height for the avatar */
+}
+
+/* Container for the main profile content */
+.container {
+    background-color: hsl(0, 0%, 12%); /* Dark background for the container */
+    margin: 10 10; /* Margin around the container */
+    padding: 50px; /* Inner padding for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    text-align: center; /* Center-aligns text inside the container */
+}
+
+/* Body styling for the overall layout */
+body {
+    display: flex; /* Flexbox layout for the body */
+    flex-direction: column; /* Stacks elements vertically */
+    justify-content: space-between; /* Space between the main content and footer */
+    align-items: center; /* Center-aligns elements horizontally */
+    min-height: 100vh; /* Ensures the body takes the full viewport height */
+    margin: 0; /* Removes default margin */
+    background-color: hsl(0, 0%, 8%); /* Dark background for the entire page */
+}
+
+/* Main content area styling */
+main {
+    flex: 1; /* Allows the main content to fill the available space */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 100%; /* Ensures main takes full width */
+}
+
+/* Styling for individual social media boxes */
+.boxes {
+    background-color: hsl(0, 0%, 20%); /* Dark background for the boxes */
+    border-radius: 5px; /* Rounded corners for the boxes */
+    padding: 10px; /* Padding inside the boxes */
+    margin: auto; /* Centers boxes within the container */
+    text-align: center; /* Centers text inside the boxes */
+    color: hsl(0, 0%, 100%); /* White text color for the boxes */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 15px; /* Font size for the text inside the boxes */
+}
+
+/* Hover effect for social media boxes */
+.boxes:hover {
+    background-color: hsl(75, 94%, 57%); /* Light green background on hover */
+    color: black; /* Black text color on hover */
+}
+
+/* Shared font-family for various elements */
+.name, .location, .bio, .boxes {
+    font-family: Inter, sans-serif; /* Font family for the text */
+}
+
+/* Name text styling */
+.name {
+    color: hsl(0, 0%, 100%); /* White text color for the name */
+    font-size: 25px; /* Larger font size for the name */
+    font-weight: 600; /* Semi-bold font weight */
+    margin: 0; /* Removes margin */
+}
+
+/* Location text styling */
+.location {
+    margin: 0; /* Removes margin */
+    color: hsl(75, 94%, 57%); /* Light green color for location */
+    font-size: 14px; /* Smaller font size for location */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+/* Bio text styling */
+.bio {
+    font-size: 14px; /* Small font size for the bio */
+    color: hsl(0, 0%, 100%); /* White text color for the bio */
+}
+
+/* Footer styling */
+footer {
+    text-align: center; /* Center aligns the footer text */
+    width: 100%; /* Ensures the footer spans the full width */
+}
+
+/* Styling to remove underline from links */
+.nounderline {
+    text-decoration: none; /* Removes underline from links */
+    color: inherit; /* Inherits the text color from the parent element */
+}
