@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+    margin: 0; /* Removes the default margin on all elements */
+    padding: 0; /* Removes the default padding on all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    font-family: 'Outfit', sans-serif; /* Sets the font family for the body */
+    background-color: hsl(30, 54%, 90%); /* Light background color for the page */
+    color: hsl(30, 10%, 34%); /* Dark text color for readability */
+    display: flex; /* Uses flexbox for alignment */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks elements vertically */
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+    margin: 0; /* Removes default margin */
+    line-height: 1.6; /* Sets the line height for better readability */
+}
+
+/* Container for the preptime section */
+.preptimecontainer {
+    max-width: 800px; /* Limits the width of the container */
+    background-color: hsl(330,100%,98%); /* Light pink background */
+    border-radius: 15px; /* Rounds the corners of the container */
+    padding: 10px; /* Adds space inside the container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* Main container for the page content */
+.container {
+    max-width: 800px; /* Limits the width of the container */
+    flex-grow: 1; /* Ensures this container grows to take up available space */
+    background-color: white; /* White background for the main content */
+    border-radius: 15px; /* Rounds the corners of the container */
+    padding: 30px; /* Adds space inside the container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the container */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* Image Styling */
+.image img {
+    width: 100%; /* Makes the image span the full width of its container */
+    border-radius: 15px; /* Rounds the corners of the image */
+}
+
+/* Styling for main headings */
+h1 {
+    font-family: 'Young Serif', serif; /* Uses a serif font for the main heading */
+    font-size: 32px; /* Sets the font size */
+    color: hsl(24, 5%, 18%); /* Dark color for the main heading */
+    margin: 20px 0; /* Adds spacing above and below the heading */
+}
+
+/* Styling for preptime heading */
+.preptime {
+    margin-left: 20px; /* Indents the heading */
+    color: hsl(332, 51%, 32%); /* Sets a purple color for the heading */
+}
+
+/* Styling for subheadings */
+h2 {
+    font-size: 20px; /* Sets the font size for subheadings */
+    margin: 20px 0 10px; /* Adds spacing around the subheading */
+    color: hsl(14, 45%, 36%); /* Sets a brown color for subheadings */
+}
+
+/* Section styling */
+.section {
+    margin: 20px 0; /* Adds spacing between sections */
+}
+
+/* Paragraph styling */
+.description {
+    margin-bottom: 20px; /* Adds space below the paragraph */
+    font-size: 16px; /* Sets the font size */
+    color: hsl(30, 10%, 34%); /* Sets a darker text color for the description */
+}
+
+/* Styling for lists */
+ul, ol {
+    margin: 15px 0; /* Adds space around the lists */
+    padding-left: 20px; /* Indents the list items */
+}
+
+/* Styling for the preparation list */
+.preparation-list {
+    margin-left: 20px; /* Adds left margin to the preparation list */
+}
+
+/* Custom bullet color for the preparation list */
+.preparation-list li::marker {
+    color: hsl(332, 51%, 32%); /* Purple color for the bullet points */
+}
+
+/* Custom bullet color for other lists */
+.ingredients-list li::marker,
+.instructions-list li::marker {
+    color: hsl(14, 45%, 36%); /* Brown color for the bullet points */
+}
+
+/* Adds spacing between items in preparation and ingredients list */
+.preparation-list li,
+.ingredients-list li {
+    margin-bottom: 10px; /* Adds spacing below list items */
+}
+
+/* Adds spacing between items in instructions list */
+.instructions-list li {
+    margin-bottom: 15px; /* Adds more space below each instruction */
+}
+
+/* General Table Styling */
+table {
+    width: 100%; /* Ensures the table spans the full width of the container */
+    border-collapse: collapse; /* Ensures borders between table cells do not overlap */
+    margin-top: 15px; /* Adds spacing above the table */
+    font-size: 16px; /* Sets font size for table text */
+}
+
+/* Styling for table cells */
+td {
+    padding: 10px 15px; /* Adds padding inside each table cell */
+    border-bottom: 1px solid hsl(30, 54%, 90%); /* Adds a subtle border between rows */
+}
+
+/* Left column of the table (e.g., labels) */
+td:first-child {
+    text-align: left; /* Aligns the text in the first column to the left */
+    color: hsl(30, 10%, 34%); /* Darker color for the first column */
+}
+
+/* Right column of the table (e.g., values) */
+td:last-child {
+    font-weight: 600; /* Makes the values bold */
+    color: hsl(14, 45%, 36%); /* Sets a dark color for the values */
+}
+
+/* Styling for horizontal rule (line) */
+hr {
+    background-color: hsl(30, 54%, 90%); /* Light color for the horizontal rule */
+    border: 0; /* Removes default border */
+    height: 2px; /* Sets the height of the line */
+}
+
+/* Footer Styling */
+.attribution {
+    font-size: 11px; /* Small font size for attribution text */
+    text-align: center; /* Centers the text */
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Styling for links in the footer */
+.attribution a {
+    color: hsl(228, 45%, 44%); /* Blue color for links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; /* Reduces padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Reduces the font size for headings on smaller screens */
+    }
+
+    h2 {
+        font-size: 18px; /* Reduces the font size for subheadings on smaller screens */
+    }
+}
